@@ -1,8 +1,10 @@
 using System.ComponentModel.DataAnnotations;
 
+
 namespace LibraryManagementSystemBackend.Dto
 {
-    public class BookRequestDto
+    public class 
+    
     {
 
         [StringLength(255, MinimumLength = 3)]
@@ -26,8 +28,11 @@ namespace LibraryManagementSystemBackend.Dto
         public required string PublishedDate { get; set; }
 
         public string? Description { get; set; }
+        
         public bool? CopiesAvailable { get; set; }
+
         public int? TotalCopies { get; set; }
+
         public Guid CategoryId { get; set; }
     }
 }
